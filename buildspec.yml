@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+  build:
+    commands:
+      - echo "trying to go into my-app now"
+      - cd my-app
+      - yarn build
+      - echo "The process has finished"
+
+artifacts:
+  files:
+    - '**/*'
+  name: my-webapp-artifacts
