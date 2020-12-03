@@ -8,7 +8,8 @@ phases:
     commands:
       - echo "trying to build the app now"
       - ls
-      - yarn build
+      - npm run build
+      - ls
       - echo "The process has finished"
 
 artifacts:
