@@ -11,4 +11,4 @@ phases:
       - npm run build
       - ls
       - echo "The process has finished"
-      - aws s3 sync Build s3://dominic-react-test-app
+      - aws s3 sync build s3://dominic-react-test-app
