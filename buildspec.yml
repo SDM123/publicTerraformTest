@@ -11,8 +11,4 @@ phases:
       - npm run build
       - ls
       - echo "The process has finished"
-
-artifacts:
-  files:
-    - 'build/*'
-  name: my-webapp-artifacts
+      - aws s3 sync Build s3://dominic-react-test-app
